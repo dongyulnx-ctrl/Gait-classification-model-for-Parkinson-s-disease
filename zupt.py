@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import math
 
 # 读取数据
-file_path = ('C:/Users/86159/Desktop/论文/lcy/firstbed/firstbed/output3.csv')
+file_path = ('data/firstbed/output3.csv')
 col =['X Gyro','Y Gyro','Z Gyro', 'X acc','Y acc','Z acc']
 df = pd.read_csv(file_path, header=0,usecols=col)
 

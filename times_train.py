@@ -56,10 +56,10 @@ for run in range(num):
     labels = []
     # 列名 X Gyro	Y Gyro	Z Gyro	X acc	Y acc	Z acc	front	back
     all_col_name = ['X Gyro', 'Y Gyro', 'Z Gyro', 'X acc', 'Y acc', 'Z acc', 'front', 'back']  # 总通道
-    # 'C:/Users\86159\Desktop\论文\lcy/firstbed/firstbed/output0.csv'
+    # 'data/firstbed/output0.csv'
     for device in range(0, class_num):
         file_path = os.path.join(data_root,
-                                 f'C:/Users\86159\Desktop\论文\lcy/secondbed/secondbed/output{device}.csv')  # 数据文件路径，在本文件夹上层 dataset里
+                                 f'data/secondbed/output{device}.csv')  # 数据文件路径，在本文件夹上层 dataset里
         col_name = all_col_name[0: len_channel]  # 用于训练的通道
         col_idx = list(range(len_channel))
         df = pd.read_csv(file_path, sep=',', header=0, usecols=col_name)
@@ -207,7 +207,7 @@ for run in range(num):
     results['ave_sen'].append(np.mean(Sen))
 
     df = pd.DataFrame(results)
-    save_path = 'C:/Users\86159\Desktop\论文\dhr\作图\箱型图/metrics_results.csv'  # 设置保存路径
+    save_path = 'result_photos/metrics_results.csv'  # 设置保存路径
     df.to_csv(save_path, index=False)
     def plot_Performance_Evaluation(Acc, Sen, Spe, PPV, F_score, MCC):
         metrics = ['Spe', 'Acc', 'Sen', 'PPV', 'F_score', 'MCC']

@@ -57,10 +57,10 @@ data = []
 labels = []
 #列名 X Gyro	Y Gyro	Z Gyro	X acc	Y acc	Z acc	front	back
 all_col_name = ['X Gyro', 'Y Gyro', 'Z Gyro', 'X acc', 'Y acc', 'Z acc', 'front', 'back']  # 总通道
-#'C:/Users\86159\Desktop\论文\lcy/firstbed/firstbed/output0.csv'
+#'data/firstbed/output0.csv'
 for device in range(0, class_num):
-    file_path = os.path.join(data_root,f'F:\论文\lcy/thirdbed/thirdbed\output{device}.csv')  # 数据文件路径，在本文件夹上层 dataset里
-    #C:/Users\86159\Desktop\论文\lcy/secondbed/secondbed/output{device}.csv
+    file_path = os.path.join(data_root, f'data/thirdbed/output{device}.csv')  # 数据文件路径，在本文件夹上层 dataset里
+    #data/secondbed/output{device}.csv
     col_name = all_col_name[0: len_channel]  # 用于训练的通道
     col_idx = list(range(len_channel))
     df = pd.read_csv(file_path, sep=',', header=0, usecols=col_name)

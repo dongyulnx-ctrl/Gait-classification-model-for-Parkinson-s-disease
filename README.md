@@ -66,7 +66,7 @@ pip install torch numpy pandas scikit-learn matplotlib seaborn
 
 ## 使用方法
 
-1. **修改数据路径**：训练脚本中数据路径是硬编码的绝对路径（形如 `F:\论文\lcy\thirdbed\thirdbed\output{device}.csv`），使用前需改成你自己的数据目录。数据为 8 列 CSV：`X Gyro, Y Gyro, Z Gyro, X acc, Y acc, Z acc, front, back`（前三轴角速度 + 三轴加速度 + 前/后脚压力）。
+1. **修改数据路径**：训练脚本中数据路径是硬编码的绝对路径（形如 `<your-data-dir>/output{device}.csv`），使用前需改成你自己的数据目录。数据为 8 列 CSV：`X Gyro, Y Gyro, Z Gyro, X acc, Y acc, Z acc, front, back`（前三轴角速度 + 三轴加速度 + 前/后脚压力）。
 
 2. **训练**：
 ```bash

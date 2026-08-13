@@ -69,7 +69,7 @@ all_col_name = ['X Gyro', 'Y Gyro', 'Z Gyro', 'X acc', 'Y acc', 'Z acc', 'front'
 
 num=4
 for device in range(0, num):
-    file_path = os.path.join(data_root,f'C:/Users\86159\Desktop\论文\lcy/thirdbed/thirdbed/output{device}.csv')  # 数据文件路径，在本文件夹上层 dataset里
+    file_path = os.path.join(data_root,f'data/thirdbed/output{device}.csv')  # 数据文件路径，在本文件夹上层 dataset里
     col_name = all_col_name[0: 6]  # 用于训练的通道
     col_idx = list(range(6))
     df = pd.read_csv(file_path, sep=',', header=0, usecols=col_name)
