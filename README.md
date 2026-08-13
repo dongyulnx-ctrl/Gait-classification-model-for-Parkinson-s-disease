@@ -1,4 +1,4 @@
-# ST-CNN-Transformer
+# ST-CNN-Transformer帕金森病步态识别模型
 
 基于**时空卷积网络（Spatial-Temporal CNN）+ Transformer** 的帕金森病（Parkinson's disease, PD）步态严重程度分级模型。
 
