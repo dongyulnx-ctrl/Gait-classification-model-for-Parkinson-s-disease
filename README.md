@@ -84,8 +84,3 @@ python times_train.py            # 跑 40 次，生成 metrics_results.csv
 python zupt.py                   # 画零速检测图
 python "period zupt.py"          # 步态周期融合
 ```
-
-## 说明
-
-- 数据采集自襄阳市第一人民医院，实验方案与伦理批准号见论文正文。
-- 训练结果为论文中的 98.81% 四分类准确率，具体指标见表 Ⅳ、Ⅴ 及图 7~10。
